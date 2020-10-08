@@ -5,6 +5,20 @@ public class Problem1 {
         if (data == null || data.length == 0) {
             return -1;
         }
+
+        int mid = (data.length) / 2;
+        while (mid < data.length)
+            if (data[mid] == target) {
+                return mid;
+            }
+
+            else if (data[mid] > target) {
+                mid++;
+            }
+
+            else if (data[mid] < target) {
+                mid--;
+            }
         return -1;
     }
 }
