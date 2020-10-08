@@ -2,20 +2,19 @@ public class Problem1 {
 
     // Do not change signature (function name, parameters)
     public static int binarySearch(int[] data, int target) {
-        if (data == null || data.length == 0) {
-            return -1;
-        }
-        int mid = (data.length) / 2;
+        int s = 0;
+        int length = data.length - 1;
 
-        while (mid < data.length) {
+        while (s <= length) {
+            int mid = s + (length - s) / 2;
             if (data[mid] == target) {
                 return mid;
             }
-            else if (data[mid] < target) {
-                mid--;
+            if (data[mid] < target) {
+                s = mid + 1;
             }
-            else if (data[mid] > target) {
-                mid++;
+            else {
+                length = mid - 1;
             }
         }
         return -1;
