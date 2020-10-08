@@ -6,13 +6,16 @@ public class Problem1 {
             return -1;
         }
         int mid = (data.length) / 2;
-        while (mid <= data.length - 1) {
+
+        while (mid < data.length) {
             if (data[mid] == target) {
                 return mid;
-            } else if (data[mid] > target) {
-                mid++;
-            } else if (data[mid] < target) {
+            }
+            else if (data[mid] < target) {
                 mid--;
+            }
+            else if (data[mid] > target) {
+                mid++;
             }
         }
         return -1;
