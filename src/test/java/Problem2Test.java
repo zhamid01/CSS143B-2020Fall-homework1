@@ -8,7 +8,11 @@ public class Problem2Test {
     // Okay to change
     @Test
     public void testBubbleSort() {
-        assertTrue(false);
-        // add your tests here
+        int inputs[] = {91, 21, 22, 25, 19};
+        int answer[] = {19, 21, 22, 25, 91};
+
+            //Problem2.bubbleSort(inputs); = int actual[];
+            int expected[] = answer;
+            //assertArrayEquals(answer, actual);
     }
 }
