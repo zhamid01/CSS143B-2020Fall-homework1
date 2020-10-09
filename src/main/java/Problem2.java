@@ -11,7 +11,5 @@ public class Problem2 {
                 }
             }
         }
-       // int sorted[] = data;
-       // return sorted[]
     }
 }
