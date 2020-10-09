@@ -13,15 +13,15 @@ public class Problem2 {
     public static void bubbleSort(int[] data) {
         for (int x = 0; x < data.length - 1; x++) {
 
-            for (int j = 0; j < data.length  - x - 1; j++) {
+            for (int y = 0; y < data.length  - x - 1; y++) {
 
-                if (data[j] > data[j + 1]) {
+                if (data[y] > data[y + 1]) {
 
-                    int placeHolder = data[j];
+                    int placeHolder = data[y];
 
-                    data[j] = data[j + 1];
+                    data[y] = data[y + 1];
 
-                    data[j + 1] = placeHolder;
+                    data[y + 1] = placeHolder;
                 }
             }
         }

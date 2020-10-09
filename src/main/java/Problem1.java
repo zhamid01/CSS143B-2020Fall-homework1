@@ -13,16 +13,16 @@ public class Problem1 {
         if (data == null) {
             return -1;
         }
-        int s = 0;
+        int x = 0;
         int length = data.length - 1;
 
-        while (s <= length) {
-            int mid = s + (length - s) / 2;
+        while (x <= length) {
+            int mid = x + (length - x) / 2;
             if (data[mid] == target) {
                 return mid;
             }
             if (data[mid] < target) {
-                s = mid + 1;
+                x = mid + 1;
             }
             else {
                 length = mid - 1;
